@@ -4,36 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
     <title>Inicion de Sesión</title>
 </head>
 <body>
     <form action="">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre">
+        <label>Nombre:
+            <input type="text">
+        </label>
 
-        <label for="apellidos">Apellidos:</label>
-        <input type="text" id="apellidos">
+        <label>Apellidos:
+            <input type="text">
+        </label>
 
-        <label for="edad">Fecha de nacimiento:</label>
-        <input type="date" id="edad">
+        <label>Fecha de nacimiento:
+            <input type="date">
+        </label>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email">
+        <label for="email">Email:
+            <input type="email" id="email">
+        </label>
 
-        <label for="contraseña">Contraseña:</label>
-        <input type="password" id="contraseña">
+        <label>Contraseña:
+            <input type="password">
+        </label>
 
-        <label for="">Sexo:</label>
-        <label for="masculino">Masculino</label>
-        <input type="radio" name="sexo" id="masculino">
+        <label>Sexo:
+            <label>Masculino
+                <input type="radio" name="sexo">
+            </label>
 
-        <label for="femenino">Femenino</label>
-        <input type="radio" name="sexo" id="femenino">
+            <label>Femenino
+                <input type="radio" name="sexo">
+            </label>
 
-        <label for="otro">Otro</label>
-        <input type="radio" name="sexo" id="otro">
+            <label>Otro
+                <input type="radio" name="sexo" id="otro">
+            </label>
+        </label>
 
-        <input type="submit">
+        <div class="container-buttons">
+            <input type="reset"> 
+            <input type="submit">
+        </div>
     </form>
 </body>
 </html>
