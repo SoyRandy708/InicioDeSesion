@@ -1,0 +1,85 @@
+/* GENERAL */
+:root {
+    --background-web: #FAF7F0;
+    --background-form: #101010;
+    --background-form-2: #d81f26;
+    --shadow: #E62027;
+}
+html {
+    font-size: 62.5%;
+    background-color: var(--background-web, white);
+    margin: 30px 10px
+}
+* {
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.6rem;
+    color: var(--background-web);
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* FORMULARIO */
+.container-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, var(--background-form-2), var(--background-form));
+    border-radius: 20px;
+    overflow: hidden;
+}
+.logo {
+    width: 100%;
+    height: 200px;
+    background-image: url("https://res.cloudinary.com/dwog1xmvw/image/upload/v1672951929/ProyectosPersonales/InicioDeSesion/netflix_h6qhjs.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+label {
+    margin: 10px;
+}
+input {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 5px 15px;
+    margin: 10px 0;
+    color: var(--background-form);
+    background-color: var(--background-web);
+    transition: transform 0.3s;
+}
+input:hover {
+    transform: scale(1.05)
+}
+input:focus {
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 10px 3px var(--shadow);
+}
+
+/* BOTONES DEL FORMULARIO */
+.container-buttons {
+    display: flex;
+    flex-direction: column;
+}
+.container-buttons input {  
+    padding: 10px 20px;
+    background-color: var(--background-web);
+}
+.container-buttons input:focus {
+    box-shadow: none;
+}
+.container-buttons input:active {
+    background-color: var(--background-form);
+    color: var(--background-web);
+}
+
+
