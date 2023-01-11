@@ -8,7 +8,8 @@
 html {
     font-size: 62.5%;
     background-color: var(--background-web, white);
-    margin: 30px 10px
+    margin: 30px 10px;
+    overflow-x: hidden;
 }
 * {
     font-family: 'Nunito', sans-serif;
@@ -17,6 +18,11 @@ html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+/* IMAGENES DE FONDO */
+.imagenes {
+    display: none;
 }
 
 /* FORMULARIO */
@@ -54,10 +60,7 @@ input {
     margin: 10px 0;
     color: var(--background-form);
     background-color: var(--background-web);
-    transition: transform 0.3s;
-}
-input:hover {
-    transform: scale(1.05)
+    transition: transform 0.2s;
 }
 input:focus {
     outline: none;
@@ -82,4 +85,9 @@ input:focus {
     color: var(--background-web);
 }
 
-
+/* MEDIA QUERIES */
+@media (hover: hover) {
+    input:hover {
+        transform: scale(1.05)
+    }
+}
